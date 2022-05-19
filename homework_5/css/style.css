@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.page-wrapper{
+    position: relative;
+    
+}
+html,
+body{
+    height: 100%;
+}
+.page-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+.header{
+    background-color:  #CCA800 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+      
+}   
+.logo {
+    display: inline-block;
+    margin: 10px;
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    margin: 10px;
+}
+.nav-menu li{
+    display: inline-block;
+    list-style: none;
+   
+}
+/* header ends */
+
+.main{
+    display: flex;
+    justify-content: stretch;
+    flex: 1 1 auto;
+    
+}
+.aside{
+   
+    text-align: center;
+    flex: 0 0 210px;
+}
+.left{
+    background-color: #B98D99;
+    order: -1;
+}
+.right{
+    background-color: #A2B9C2 ;
+}
+.content{
+    background-color: white;
+    text-align: center;
+    margin: 25px;
+    flex-grow: 1;
+    
+}
+h1{
+    text-transform: uppercase;
+    
+}
+
+/* footer  */
+.footer{
+    background-color: #93D175;
+    text-align: center;
+} 
+
+
+/* items */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}  
+.card{
+    border: 2px solid grey;
+    width: 32%;
+    margin: 0 0 20px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.img-100{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px;
+   
+}
+
+.go{
+    color: white;
+    background-color: #51304E;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 5px;
+    
+          
+}
+
+
+/* task 3  */
+.holder {
+    border: 2px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+ 
+    
+}    
+.item:nth-child(1){
+    background-color: orangered;
+    border-top-left-radius: 25px;
+    flex: 50%;
+    order: 1;
+    flex-grow: 1;
+   
+}
+.item:nth-child(2){
+    background-color: blue;
+    flex: 33%;
+    order: 4;
+    flex-shrink: 1;
+} 
+.item:nth-child(3){
+    background-color: blueviolet;
+    flex: 33%;
+    order: 3; 
+    flex-shrink: 1;
+}     
+.item:nth-child(4){
+    background-color: green;
+    flex: 33%;
+    order: 5;
+    flex-shrink: 1;
+}    
+.item:nth-child(5){
+    background-color: yellow;
+    border-top-right-radius: 25px;
+    flex: 50%;
+    order: 2;
+    flex-grow: 1;
+}

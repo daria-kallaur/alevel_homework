@@ -1,0 +1,61 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/* указывать для картинок */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/* ul,
+ol{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+} */
+/* для параграфа ничего больше не задавать */
+p{
+    margin: 0 0 20px;
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li:before {
+    content: " ";
+    display: inline-block;
+    color: lightcoral;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+}
+.num-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: count;
+}
+.num-list li{
+    counter-increment: count;
+}
+.num-list li:before{
+    content:counter(count);
+    color: lightgreen;
+    margin-right:7px;
+}
+.item{
+    min-height: flex;
+}
+.proc.item{
+    width: 50%;
+}

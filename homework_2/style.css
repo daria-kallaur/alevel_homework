@@ -1,0 +1,44 @@
+/*task 1. Cтиль style.css подключился только после того как тег style(вес 1), атрибут style(вес 10?) удалены были.При подключеном атрибуте стиль, тег style.css и тег style не работают,т.е. inline атрибут style  преобладает(вес 1000) */
+
+blockquote{
+    color: green;
+}
+/* task 2 */
+a[href^='https']{
+    color: red;
+}
+.list > li:last-child a {
+	background-color: green;
+}
+ul+p{
+    font-size: 26px;
+}
+
+/* task 3 */
+
+.text-box>h3:first-child{
+    color: pink;
+}
+#greycol{
+    color: grey;
+}
+.text-box div>p{
+    color: red;
+}
+:nth-child(7){
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+
+/* task 4 */
+
+.bg-box{
+    
+    height: 500px;
+    width: 850px;
+    border-radius: 15px;
+    background: url(https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg) center/200px 150px no-repeat, url(https://www.freeiconspng.com/uploads/lamp-png-0.png) top left / 30px 30px repeat-x, url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru)left / 30px 30px repeat-y,  url(https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png) right/ 30px 30px repeat-y, url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png) bottom/ 100px 100px repeat-x, green
+      
+}

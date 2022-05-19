@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.bg-box{  
+  height: 600px;
+  width: 600px;
+  background-color: #0d5825;  
+  text-align: center;
+  position: relative;             
+}
+
+blockquote{
+  font-size: 25px;
+  letter-spacing: normal;
+  color: #ffffff;
+  border: none; 
+  padding: 5px; 
+  margin-bottom: 5px; 
+}
+
+blockquote p::after {                                                       
+  content: close-quote;
+  vertical-align: bottom;
+}
+blockquote p::before {                                     
+  content: open-quote;
+  vertical-align: top;
+}
+
+img{
+  width: 150px;
+  text-align: center;
+  margin-top: 200px;
+       
+}
+
+.card {
+  transform: rotate(-25deg);
+  z-index: 1;
+  right: -100px;
+  position: relative;
+  transition: transform .5s ease;
+}
+.second-card {
+  transform: rotate(-10deg);
+  z-index: 2;
+  position: relative;
+  transition: transform .5s ease;
+}
+.third-card {
+  transform: rotate(10deg);
+  z-index: 3;
+  left: -110px;
+  bottom: -15px;
+  position: relative;
+  transition: transform .5s ease;
+}
+.card:hover{
+  transform: translateY(-30px) rotate(-25deg);
+  
+}
+.second-card:hover{
+  transform: translateY(-30px) rotate(-10deg);
+  
+}
+.third-card:hover{
+  transform: translateY(-30px) rotate(10deg);
+  
+}
+
+
+
+/* task 2 */
+.colorbox{
+  margin: 100px 0;
+  position: relative;
+}
+.box{
+  height: 100px;
+  width: 100px;
+  
+}
+.red{
+  background-color: #ffc0ff; 
+}
+
+.green{
+  background-color: green;
+  transform: translate(100px, 300px);  
+}
+
+.blue {
+  background-color: #6370B6;
+  transform: translate(50px, 150px);
+  z-index: 3;  
+}
+
+/* task3 */
+.menu-wrapper{
+  margin: 100px 0;
+  position: relative;
+}
+.wrapper{
+  background-color: #ACADAC;
+  height: 600px;
+  width: 300px;
+  transform: translateX(-270px);
+  text-transform: uppercase;
+  color: #ffffff;
+  
+}
+.wrapper:hover{
+  transform: translateX(0);
+}
+.wrapper:hover .menuhere{
+ display: none;
+ 
+}
+.menuhere{
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  right: 10px;
+}
+ul{
+  padding-top: 25px;
+}
+li{
+  list-style: none;
+  
+}
+li::before{
+  content:"";
+  display: inline-block;
+  width: 10px; 
+  height: 10px;
+  margin-right: 10px;
+  background-color: #FFA01B;
+  border: #000 1px solid;
+  transform: rotate(50deg)skew(10deg, 10deg);
+}
+li:hover{
+  color: #FFA01B;
+}
+/* task 4 */
+.anim-box{
+  height: 500px;
+  width: 500px;
+
+}
+.block{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: anim;
+  animation-duration: 4s;
+  margin-left: 100px;
+  animation-iteration-count: infinite;
+} 
+@keyframes anim {
+  0% {background-color: red;left:0px; top:0px;}
+  25% {background-color: blue;left:0px; top:200px;}
+  50% {background-color: green;left:200px; top:200px;}
+  75% {background-color: yellow;left: 200px; top:0}
+  100% {background-color: red;left:0px; top:0px;}
+}
+
+
+
+
